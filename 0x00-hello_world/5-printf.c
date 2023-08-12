@@ -1,11 +1,9 @@
-#include<stdio.h>
-/**
- *  main - Entry point
- *
- *  Return: Always 0 (Success)
  */
 int main(void)
 {
-        printf("\"with proper grammar, but the outcome is a piece of art,\n");
-        return (0);
+char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, ch, sizeof(ch));
+char ch[] = fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+write(2,  ch, sizeof(ch));
+return (1);
 }
